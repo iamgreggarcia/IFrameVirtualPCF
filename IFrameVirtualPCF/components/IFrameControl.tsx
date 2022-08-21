@@ -44,7 +44,7 @@ export const IFrameControl = React.memo((props: IFrameControlProps) => {
       </Stack>
       <Stack>
         {showFullScreenBtn && (
-          <Stack.Item grow align="center">
+          <Stack.Item grow align="end">
             {!isFullScreen && (
               <DefaultButton onClick={onFullScreen}>Full screen</DefaultButton>
             )}
