@@ -1,10 +1,14 @@
 import { DefaultButton, Stack, ThemeProvider } from "@fluentui/react";
 import * as React from "react";
 import { IFrameControlProps } from "./Component.types";
+const defaultSrc = "https://bing.com";
 
 export const IFrameControl = React.memo((props: IFrameControlProps) => {
-  const { src, width, height, onFullScreen, isFullScreen, showFullScreenBtn } =
+  const { width, height, onFullScreen, isFullScreen, showFullScreenBtn } =
     props;
+
+  // Set default src to bing (or whatever)
+  const src = props.src ?? defaultSrc;
 
   const containerSize = React.useMemo(() => {
     return {
