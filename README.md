@@ -14,7 +14,7 @@ The control accepts the following properties:
 
 ## Installation / Usage
 
-There are two ways to use the PCF component. 
+There are two ways to install the PCF component. 
 1. Download the managed solution from the [releases](https://github.com/iamgreggarcia/IFrameVirtualPCF/releases/) page of this repo
 2. Clone and push the solution via the [MS Power Platform CLI](https://docs.microsoft.com/en-us/power-platform/developer/cli/introduction)
 
