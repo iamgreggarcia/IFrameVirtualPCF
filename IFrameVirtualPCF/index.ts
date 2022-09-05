@@ -10,11 +10,6 @@ export class IFrameVirtualPCF
   private context: ComponentFramework.Context<IInputs>;
   isFullScreen = false;
 
-  /**
-   * Empty constructor.
-   */
-  constructor() {}
-
   onFullScreen = (): void => {
     this.context.mode.setFullScreen(true);
   };
@@ -76,7 +71,6 @@ export class IFrameVirtualPCF
 
     return {
       src: undefinedIfEmpty(context.parameters.src),
-      frameBorder: "0",
       width: allocatedWidth,
       height: allocatedHeight,
       isFullScreen: this.isFullScreen,

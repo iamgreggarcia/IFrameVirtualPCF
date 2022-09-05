@@ -3,15 +3,8 @@ import * as React from "react";
 import { IFrameControlProps } from "./Component.types";
 
 export const IFrameControl = React.memo((props: IFrameControlProps) => {
-  const {
-    src,
-    frameBorder,
-    width,
-    height,
-    onFullScreen,
-    isFullScreen,
-    showFullScreenBtn,
-  } = props;
+  const { src, width, height, onFullScreen, isFullScreen, showFullScreenBtn } =
+    props;
 
   const containerSize = React.useMemo(() => {
     return {
@@ -34,12 +27,7 @@ export const IFrameControl = React.memo((props: IFrameControlProps) => {
           grow
           style={{ position: "relative", backgroundColor: "white" }}
         >
-          <iframe
-            src={src}
-            frameBorder={frameBorder}
-            width={width}
-            height={height}
-          ></iframe>
+          <iframe src={src} width={width} height={height}></iframe>
         </Stack.Item>
       </Stack>
       <Stack>
