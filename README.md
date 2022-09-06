@@ -1,6 +1,6 @@
 # iFrame PCF Code Component
 
-![demo](iFramePCF.gif)
+![demo](/img/iFramePCF.gif)
 
 The **iFrameVirtualPCF** code component provides a wrapper around the `<iframe>` [HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#positioning_and_scaling), providing a nested browsing context inside a Power apps Canvas App. 
 
@@ -34,4 +34,4 @@ pac pcf push --publisher-prefix <your-publisher-prefix>
 ```
 
 ### Add component to a Canvas App
-![use inside canvas apps](/iFrameAddComponent.gif)
+![use inside canvas apps](/img/iFrameAddComponent.gif)
